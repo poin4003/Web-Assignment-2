@@ -1,0 +1,159 @@
+.sign-up-container {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 500px;
+    height: 600px;
+    margin: 20px auto;
+    border-radius: 50px;
+    background: rgba(28, 51, 102, 0.8);
+    box-shadow: 0px 0px 80px 0px #69AFEF inset;
+    color: white;
+    padding: 12px 20px 3px 20px;
+    background-image: url('../image/Underline/border-login.png');
+    background-size: 94% 94%;
+    background-position: 14px 20px;
+    background-repeat: no-repeat;
+    border: 0.5px solid #69AFEF;
+}
+
+.sign-up-container h2 {
+    position: relative;
+    text-align: center;
+    padding: 35px 0 20px 0;
+}
+
+.sign-up-container label {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    font-size: 14px;
+    margin-left: 40px;
+    padding: 0 2px;
+    background-color: rgba(28, 51, 102, 1);
+}
+
+.sign-up-name-style {
+    margin-top: 2px;
+}
+
+.password-style {
+    margin-top: 2px;
+}
+
+.repeat-pass-style {
+    margin-top: 2px;
+}
+
+.email-style {
+    margin-top: -8px;
+}
+
+.nationality-label-style {
+    margin-top: 2px;
+}
+
+
+.sign-up-container input[type="email"], input[type="radio"],
+input[type="text"], 
+input[type="password"],
+select {
+    width: 90%;
+    position: relative;
+    padding: 10px;
+    margin: 10px 30px;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: rgba(28, 51, 102, 1); 
+    outline: none;
+}
+
+.sign-up-container input[type="email"]:focus,
+input[type="text"]:focus, 
+input[type="password"]:focus,
+select:focus {
+    border: 1px solid #6BE9E6;
+    outline: 2px solid #6BE9E6;
+}
+
+.gender-style {
+    bottom: 177px;
+    left: 20px;
+}
+
+.gender {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: rgba(28, 51, 102, 1);
+    padding: 10px;
+    margin: 10px 30px;
+}
+
+.gender label {
+    display: inline-block;
+}
+
+.gender label[for="male"], label[for="female"], label[for="other-gender"] {
+    bottom: 148px;
+}
+
+.gender input[type="radio"] {
+    display: inline-block;
+    left: -35px;
+    top: 0px;
+}
+
+
+.form-group-sign-up {
+    position: relative;
+    margin: 15px 30px;
+}
+
+.form-group-sign-up a {
+    text-decoration: underline;
+    color: #6BE9E6;
+    cursor: pointer;
+}
+
+.sign-up-container input[type="submit"] {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    left: 65%;
+    bottom: 10%;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FFF 0%, #69AFEF 100%);
+    box-shadow: 0px 0px 6px 0px #69AFEF;
+}
+
+.sign-up-container input[type="submit"]:hover {
+    background: linear-gradient(180deg, #FFF 0%, #F8CC08 100%);
+    box-shadow: 0px 0px 6px 0px #F8CC08;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    margin: 30px 21px;
+}
+
+.policy a {
+    color:#6BE9E6;
+}
+
+.policy p {
+    padding-left: 8px;
+}

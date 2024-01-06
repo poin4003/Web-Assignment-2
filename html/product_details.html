@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PcHuy Fishshop Oculus</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <link rel="stylesheet" href="../css/product_details.css">
+    <link rel="icon" type="image/x-icon" href="../image/Logo/Logo1.png">
+    <link rel="stylesheet" href="../Resource/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../Resource/fontawesome/css/brands.css"> 
+    <link rel="stylesheet" href="../Resource/fontawesome/css/solid.css">
+    <script src="../Resource/jquery/jquery3.7.1.js"></script>
+</head>
+<body>
+    <div class="header" id="header">
+        <img src="../image/Logo/Logo.png" alt="Logo" onclick="loadHomePage()">
+        <div class="nav-bar">
+            <ul class="hor-nav-bar"> 
+                <li><a class="heading" href="../html/fish.html">FISH</a></li>
+                <li><a class="heading" href="../html/Eggs.html">EGGS</a></li>
+                <li><a class="heading" href="../html/items.html">ITEMS</a></li>
+                <li><a class="heading" href="../html/Plant.html">PLANT</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="btn-icon ver-nav-bar">
+                        <i class="icon fa-solid fa-bars"></i>
+                        <div class="dropdown">
+                            <a href="../html/fish.html">Fish</a>
+                            <a href="../html/Eggs.html">Eggs</a>
+                            <a href="../html/items.html">Items</a>
+                            <a href="../html/Plant.html">Plant</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-icon search">
+                        <i class="icon fa-solid fa-magnifying-glass"></i>
+                        <form class="search-dropdown">
+                            <input type="text" placeholder="Search...">
+                            <select>
+                                <option>Best Selling</option>
+                                <option>High cost</option>
+                                <option>Low cost</option>
+                                <option>Category</option>
+                            </select>
+                        </form>                 
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-icon ver-nav-bar-user">
+                        <i class="icon fa-solid fa-user"></i>
+                        <div class="dropdown dropdown-user">
+                            <a class="login-link" href="#">Log in</a>
+                            <a class="sign-up-link" href="#">Sign up</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-icon" onclick="loadCart()">
+                        <i class="icon fa-solid fa-cart-shopping"></i>
+                        <div class="cart-badge"><span id="cart-count">0</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- product details -->
+
+    <div class="product-detail">
+        <div class="box-detail">
+            <h1 class="heading-pd">Product details</h1>
+            <div class="main-image">
+                <img src="../image/Fish images/oculus.jpg" alt="Product images" id="mainImage">
+            </div>
+            <div class="tool-box">
+                <h1 class="product-name" id="product-name">Oculus</h1>
+                <p class="product-price" id="product-price">2.000$</p>
+                <p class="shipping"><a>Shipping</a> calculated at checkout.</p>
+                <form>
+                    <div class="type-selector">
+                        <label>Type:</label>
+                        <select>
+                            <option>Small</option>
+                            <option>Big</option>
+                        </select>
+                    </div>
+                    <div class="Quantity">
+                        <label>Quantity:</label>
+                        <div class="wrapper">
+                            <span class="minus"><img src="../image/icon/minus.png"></span>
+                            <span class="num">01</span>
+                            <span class="plus"><img src="../image/icon/plus.png"></span>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-icon product-dc" id="add-to-cart-detail">
+                    <i class="icon fa-solid fa-cart-plus"></i>
+                </div>
+                <p class="status">Status: <span>1003</span></p>
+            </div>
+            <div class="image-gallery">
+                <img src="../image/Fish images/oculus/oculus.jpg" alt="oculus" width="200px" height="100px" onclick="changeImage(this)">
+                <img src="../image/Fish images/oculus/1.jpg" alt="1" width="200px" height="100px" onclick="changeImage(this)">
+                <img src="../image/Fish images/oculus/2.jpg" alt="2" width="200px" height="100px" onclick="changeImage(this)">
+                <img src="../image/Fish images/oculus/3.jpg" alt="3" width="200px" height="100px" onclick="changeImage(this)">
+                <img src="../image/Fish images/oculus/4.jpg" alt="4" width="200px" height="100px" onclick="changeImage(this)">
+                <img src="../image/Fish images/oculus/5.jpg" alt="5" width="200px" height="100px" onclick="changeImage(this)">
+            </div>
+            <div class="description">
+                <h1 class="heading-pd">Description</h1>
+                <div class="content-detail">
+                    <p>
+                        The Oculus is a small, passive fauna species only found in the Jellyshroom Cave.
+                    </p>
+                    <div>
+                        <h2>Appearance</h2>
+                        <p>
+                            The Oculus is a small, turquoise-colored fish with purple on its back that looks very similar in appearance to the Peeper, although around twice the size. It has two large bioluminescent magenta eyes, with each featuring very detailed irises, and appears to have no visible mouth. The Oculus has two tube-like organs that extend from its body to the top and the bottom of its head, which resemble backward-facing jets pushing it forward, much like how a Peeper maneuvers in the water. Its body ends with five swaying stalks for a tail, each having multiple purple stripes and resembling tentacles. Also, the Oculus does not have a beak, unlike a Peeper.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Behavior</h2>
+                        <p>
+                            The Oculus is fairly agile and tends to form small shoals patrolling the Jelly Shroom Caves' vicinity while constantly producing faint but audible clicking sounds. It seems to be afraid of light, as any light source directly pointed at it will make it flee. The Oculus will flee from the player much slower than its relative, therefore making it easier to catch.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h1 class="heading-pd">Category</h1>
+                <div class="category-detail">
+                    <div>
+                        <h3>Category</h3>
+                        <span>Herbivores</span>
+                    </div>
+                    <div>
+                        <h3>Tab</h3>
+                        <span id="genus">Fauna</span>
+                    </div>
+                    <div>
+                        <h3>Short description</h3>
+                        <span>Small, edible prey fish.</span>
+                    </div>
+                    <div>
+                        <h3>Attitude</h3>
+                        <span id="Attitude">Passive</span>
+                    </div>
+                    <div>
+                        <h3>Biome</h3>
+                        <ul>
+                            <li>Jellyshroom Cave</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Active During</h3>
+                        <span>Cathemal (Day and Night)</span>
+                    </div>
+                    <div>
+                        <h3>Size</h3>
+                        <span>01</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Characteristics">
+                <h1 class="heading-pd display">Characteristics</h1>
+                <div class="content-detail display">
+                    <div>
+                        <p>
+                            This specimen shares genetic similarities with the common peeper. While the shallows and the cave systems are separated by just a few meters of rock, foodstuffs and threats in each biome are completely different. It is possible a small school of peepers was once cut off in the caves, and the Oculus species is how they adapted.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>1. Highly Developed Night-vision:</h2>
+                        <p>
+                            Large, complex eyeballs provide this herbivore superior vision in the dark, and an intense phobia of light.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>2. Lack of Beak:</h2>
+                        <p>
+                            While the peeper uses its beak to break down tough corals, the Oculus likely feeds on the soft fungal growths of the Jellyshroom caves and thus has no need for one.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>3. Separated Tail Fin:</h2>
+                        <p>
+                            The caves in which the Oculus lives make it hard to escape from fast predators. The Oculus has adapted by splitting its tail fin into five separate tendrils. These tendrils prevent it from swimming as fast as its shallow-water cousin, but each can be detached and regrown, enabling it to escape more easily when caught.
+                        </p>
+                        <p>Assessment: Edible</p>
+                    </div>
+                </div>
+                <div class="swiching-btn">
+                    <button class="see-more-inf" onclick="toggleContent()">See more information...</button>
+                </div>
+            </div>
+            <div class="rating-detail">
+                <h1 class="heading-pd">Product rating</h1>
+                <div>
+                    <div class="comment">
+                        <div class="btn-icon ver-nav-bar-user">
+                            <i class="icon fa-solid fa-user"></i>
+                        </div>
+                        <div class="comment-content">
+                            <h3>Mr. Lambert</h3>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                This fish is beautiful, it swims very fast, and absolutely shines in the night. The shipping is good, very fast, and the fish is also comfortable too.
+                            </p>
+                            <div>
+                                <img src="../image/Fish images/oculus/1.jpg" alt="1" width="200px" height="100px">
+                                <img src="../image/Fish images/oculus/2.jpg" alt="2" width="200px" height="100px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment display-comment">
+                        <div class="btn-icon ver-nav-bar-user">
+                            <i class="icon fa-solid fa-user"></i>
+                        </div>
+                        <div class="comment-content">
+                            <h3>Mr. Lambert</h3>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                This fish is beautiful, it swims very fast, and absolutely shines in the night. The shipping is good, very fast, and the fish is also comfortable too.
+                            </p>
+                            <div>
+                                <img src="../image/Fish images/oculus/1.jpg" alt="1" width="200px" height="100px">
+                                <img src="../image/Fish images/oculus/2.jpg" alt="2" width="200px" height="100px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment display-comment">
+                        <div class="btn-icon ver-nav-bar-user">
+                            <i class="icon fa-solid fa-user"></i>
+                        </div>
+                        <div class="comment-content">
+                            <h3>Mr. Lambert</h3>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                This fish is beautiful, it swims very fast, and absolutely shines in the night. The shipping is good, very fast, and the fish is also comfortable too.
+                            </p>
+                            <div>
+                                <img src="../image/Fish images/oculus/1.jpg" alt="1" width="200px" height="100px">
+                                <img src="../image/Fish images/oculus/2.jpg" alt="2" width="200px" height="100px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiching-btn">
+                    <button class="see-all">See all comment...</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Other product -->
+    <div class="container" id="product-container">
+        <div id="product-data">
+        </div>
+    </div>
+    
+    <!-- Login section -->
+    <div class="login-container" id="login-container">
+        <h2>Log-in</h2>
+        <form>
+            <div>
+                <label class="label-style loginname-style">User name:</label>
+                <input type="text" id="login-name" name="Login Name" required>
+            </div>
+            <div>
+                <label class="label-style password-style">Password:</label>
+                <input type="password" id="password" name="Password" required>
+            </div>
+            <div class="form-group-login">
+                <p>you don't have account. let's</p>
+                <a class="create-account-link">create account here</a>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+
+        <div class="form-group-login-other">
+            <p>Or Login with:</p>
+            <img src="../image/image/google.png" alt="google" width="60px" height="auto">
+            <img src="../image/image/microsoft.png" alt="microsoft" width="60px" height="auto">
+            <img src="../image/image/facebook.png" alt="facebook" width="66px" height="auto">
+        </div>
+    </div>
+
+    <!-- Sign up section -->
+    <div class="sign-up-container" id="sign-up-container">
+        <h2>Sign-up</h2>
+        <form>
+            <div>
+                <label class="sign-up-name-style">User name:</label>
+                <input type="text" id="sign-up-name" name="Sign Up Name" required>
+            </div>
+            <div>
+                <label class="password-style">Password:</label>
+                <input type="password" id="password" name="Password" required>
+            </div>
+            <div>
+                <label class="password"></label>
+            </div>
+            <div>
+                <label class="repeat-pass-style">Repeat password:</label>
+                <input type="password" id="repeat-pass" name="Repeat password" required>
+            </div>
+            <div>
+                <label class="email-style">Email:</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div>
+                <label class="nationality-label-style">Nationality:</label>
+                <select>
+                    <option>VietNam</option>
+                    <option>USA</option>
+                    <option>Japan</option>
+                    <option>Russian</option>
+                    <option>France</option>
+                </select>
+            </div>
+            <div class="gender">
+                <label class="gender-style">Gender:</label>
+                <div>
+                    <input type="radio" id="male" name="male" value="Male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="female" value="Female" required>
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="other-gender" name="sex" value="Other" required>
+                    <label for="other-gender">Other</label>
+                </div>
+            </div>
+            <div class="policy">
+                <input type="checkbox" id="policy">
+                <p>i agree with a web <a href="#">policy</a></p>
+            </div>
+            <div>
+                <input type="submit" value="Create">
+            </div>
+        </form>
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <div class="About">
+            <h2>About</h2>
+            <a href="#">Unknown World</a>
+            <a href="#">Careers</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy & Cookie</a>
+            <a href="#">COOKIES SETTING</a>
+        </div>
+        <div class="Contact-us">
+            <h2>Contact-us</h2>
+            <p>
+                Join your fellow explorers as you uncover the 
+                the mysteries of Planet 4546B:
+            </p>
+            <div>
+                <img src="../image/icon/X.png" alt="X">
+                <img src="../image/icon/Instagram.png" alt="Instagram">
+                <img src="../image/icon/Youtube.png" alt="Youtube">
+                <img src="../image/icon/Discord.png" scr="Discord">
+            </div>
+        </div>
+        <div class="Store-locator">
+            <h2>Store locator</h2>
+            <form>
+                <input type="text" placeholder="Country/Region, City..">
+                <label>SIGN UP FOR UNKNOWN WORLD ENTERTAINMENT UPDATES</label>
+                <input type="email" placeholder="Email..">
+            </form>
+            <h3>COUNTRY/REGION</h3>
+            <a id="Country">VIETNAM</a>
+        </div>
+
+        <div class="Copyright">
+            <hr>
+            <p>© Copyright 2018-2020 by UNKNOWN WORLDS ENTERTAINMENT</p>
+        </div>
+    </div>
+    <script src="../javascript/product_details.js"></script>
+</body>
+</html>

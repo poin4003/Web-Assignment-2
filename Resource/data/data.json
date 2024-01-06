@@ -1,0 +1,16 @@
+[
+  {
+    "category": "NEW PRODUCT",
+    "products": [
+      {
+        "image": "image/Fish images/1.jpg",
+        "name": "Oculus",
+        "price": "2.000$",
+        "rating": "4.5",
+        "sold": 40
+      },
+      // Add other products as needed
+    ]
+  },
+  // Add other categories as needed
+]
